@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>{{ title }}</h1>
+    <p>
+    	{{ info }}
+	</p>
+    Kontakt:
+    <p>
+    	<a href="mailto:{{ contact.email }}">e-mail</a>
+    	<br>
+    	<a href="{{ contact.facebook }}">Facebook</a>
+    </p>
+
+    <a href="{{ url_for('apply')}}">Prijavi se!</a>
+{% endblock %}
