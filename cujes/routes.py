@@ -113,7 +113,7 @@ def band_post(band_id):
 
 @app.route('/info')
 def info():
-    title = "Informacije"
+    title = "Forma za novi blog"
     info = """Zmija organizira
 sezone bendovi
 tjedno jedan koncert za tri benda
