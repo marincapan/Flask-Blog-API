@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Naslovnica</h1>
+    <p>+ 1. Dohvat svih blog postova --> Klikni na Blog u meniju </p>
+	<p>+ 2. Dohvat pojedinog blog posta (s nekim ID-em; vratit 404 ako ga ne nađe) --> /blogs/id/{int}</p>
+    <p>3. upload novog blog posta (vratit 400 ako request body (onaj JSON) nije ispravno formatiran)</p>
+	<p>4. editiranje postojećeg blog posta (vratit 400 ako request body (onaj JSON) nije ispravno formatiran)</p>
+	<p>+ 5. dohvat svih blog postova koji sadrže neki string (predan kao parametar u GET requestu) --> /blogs/search/{string}</p>
+	<p>+ 6. dohvat svih blog postova koje je napisao neki član --> /blogs/author/{author}</p>
+{% endblock %}

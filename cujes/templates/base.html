@@ -1,0 +1,43 @@
+<html>
+  <head>
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Flask-Blog-API</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Flask-Blog-API</h1>
+    </header>
+
+    <nav>
+      <div class="w3-bar w3-purple w3-xlarge">
+        <a href="{{ url_for('index') }}" class="w3-bar-item w3-button">Home</a>
+        <a href="{{ url_for('news') }}" class="w3-bar-item w3-button">Blogs</a>
+       <!-- <div class="w3-dropdown-hover">
+			    <button class="w3-button">Sezone</button>
+			    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+			    	{% for band_id in bands %}
+			    		<a href="{{ url_for('band_post', band_id=band_id) }}" class="w3-bar-item w3-button">{{ bands[band_id].name }}</a>
+			    	{% endfor %}
+			    </div>
+		</div>
+			  <a href="{{ url_for('info') }}" class="w3-bar-item w3-button">Info</a>
+			  <a href="{{ url_for('apply') }}" class="w3-bar-item w3-button">Prijavi se!</a>-->
+      </div>
+    </nav>
+
+		<hr>
+		{% with messages = get_flashed_messages() %}
+		  {% if messages %}
+	      <div class="w3-container w3-purple">
+	        <ul>
+	          {% for message in messages %}
+	          	<li>{{ message }}</li>
+	          {% endfor %}
+	        </ul>
+	      </div>
+		  {% endif %}
+		{% endwith %}
+	{% block content %}{% endblock %}
+	</body>
+</html>

@@ -1,1 +1,5 @@
-FLASK_APP=comp.py
+FLASK_APP=cujes.py
+DB_USER=cujes
+DB_PASSWORD=cujes
+DB_HOST=172.17.0.2
+DB_PORT=5432

@@ -3,11 +3,11 @@
 {% block content %}
 	<h1>{{ title }}</h1>
     <ol>
-	    {% for post_id, post_data in blogs.items() %}
+	    {% for post_id, post_data in posts.items() %}
 	    <hr>
 		    <li>
 			    <div class="w3-container w3-hover-light-grey">
-		    		<!--<a href="{{ url_for('news_post', post_id=post_id) }}">-->
+		    		<a href="{{ url_for('news_post', post_id=post_id) }}">
 		    			<span>
 		    				<!-- <img src="{{ post_data.image }}" height="50px" width="auto" display="inline-block"> -->
 		    				<h1>{{ post_data.title}}</h1>

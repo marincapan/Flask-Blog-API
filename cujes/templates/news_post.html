@@ -5,14 +5,15 @@
 		<h1>Article not found!</h1>
 
 	{% else %}
-		<h1>{{ blog.title }}</h1>
-		<h5>Published: {{ blog.date }}</h5>
-		<h5>Author: {{ blog.author }}</h5>
+		<h1>{{ title }}</h1>
+		<h2>{{ post.title }}</h2>
+		<h5>Published: {{ post.date }}</h5>
+		<h5>Author: {{ post.author }}</h5>
 		<hr>
 		<div class="w3-row-padding">
 			<!-- <div class="w3-half"> -->
 				<div class="w3-card w3-white" >
-					{{ blog.body }}
+					{{ post.body }}
 				</div>
 			<!-- </div>
 			<div class="w3-half">
