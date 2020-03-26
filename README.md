@@ -2,7 +2,8 @@
 Školica Flaska by LVH-27
 
 Blog API
-- Implementirajte API koji ima endpointove za:
+
+  Implementirajte API koji ima endpointove za:
 - dohvat svih blog postova
 - dohvat pojedinog blog posta (s nekim ID-em; vratit 404 ako ga ne nađe)
 - upload novog blog posta (vratit 400 ako request body (onaj JSON) nije ispravno formatiran)
